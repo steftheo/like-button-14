@@ -1,3 +1,12 @@
-<h2 id="title">Welcome to Ember</h2>
+<h2 id="title">Like Button</h2>
+{{log model}}
+
+<p>
+  {{#each model as |movie|}}
+    {{like-counter likes=movie.score}}
+  {{/each}}
+
+
+</p>
 
 {{outlet}}
