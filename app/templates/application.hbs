@@ -2,10 +2,11 @@
 {{log model}}
 
 <p>
-  {{like-counter score=model.0.score}}
-  {{like-counter score=model.1.score}}
+  {{#each model as |movie|}}
+    {{like-counter likes=movie.score}}
+  {{/each}}
+
+
 </p>
-
-
 
 {{outlet}}

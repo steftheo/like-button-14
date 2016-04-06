@@ -1,9 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  likeCounter: true,
-
   changeLikeCounter(val) {
-    this.set(`likeCounter`, val);
+    this.set(`likes`, this.likes + val);
   },
 });

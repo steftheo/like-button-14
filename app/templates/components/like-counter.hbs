@@ -1,10 +1,5 @@
 <p>
-  {{#if likeCounter}}
     {{likes}}likes
-
-  {{else}}
-    {{add-likes likes}}likes
-  {{/if}}
 </p>
-<button {{action changeLikeCounter true}}>lit</button>
-<button {{action changeLikeCounter false}}>nah</button>
+<button {{action changeLikeCounter 1}}>lit</button>
+<button {{action changeLikeCounter -1}}>nah</button>
